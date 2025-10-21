@@ -154,9 +154,9 @@ TEST_CASE("count_lines returns 1 for single line") {
 }
 
 TEST_CASE("count_lines returns 2 for 2 lines") {
-    MockFile f{"abs"};
+    MockFile f{"a\nb"};
     BufferLineReader<MockFile> reader{f};
-    CHECK_EQ(count_lines(reader), 1);
+    CHECK_EQ(count_lines(reader), 2);
 }
 
 /* Simple example of how to use this to read settings by lines. */

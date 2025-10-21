@@ -439,7 +439,7 @@ uint32_t filter_bandwidth_for_sampling_rate(int32_t sampling_rate) {
                           // Good BPF, good matching, we have some periodical M4 % samples drop.
             return 7'000'000;
 
-        default:  // BW capture 5,5Mhz, fs = 4 x 5,5Mhz = 22Mhz max ADC sampling and others.
+        default:  // BW capture 5.5 MHz, fs = 4 x 5.5 MHz = 22 MHz max ADC sampling and others.
                   // We tested also 9Mhz FPB slightly too much noise floor, better at 8Mhz.
             return 8'000'000;
     }

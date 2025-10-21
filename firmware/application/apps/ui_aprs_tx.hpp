@@ -100,7 +100,7 @@ class APRSTXView : public View {
     TransmitterView tx_view{
         16 * 16,
         5000,
-        0  // disable setting bandwith, since APRS used fixed 10k bandwidth
+        0  // disable setting bandwidth, since APRS used fixed 10k bandwidth
     };
 
     MessageHandlerRegistration message_handler_tx_progress{
